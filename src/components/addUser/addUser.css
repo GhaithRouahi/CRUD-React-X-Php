@@ -1,0 +1,40 @@
+.addUser{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+
+
+.addUser input{
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.addUser button{
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #b2eba6d5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 80%;
+}
+
+.addUser button:hover{
+    background-color: #34da13d5;
+    color: white;
+}
+
+.addUser button:active{
+    background-color: #e75353;
+    color: white;
+}

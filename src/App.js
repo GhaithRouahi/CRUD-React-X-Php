@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import ListUsers from './components/listUsers/listUsers.jsx';
+import AddUser from './components/addUser/addUser.jsx';
+import EditUser from './components/editUser/editUser.jsx';
+import { Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <BrowserRouter>
+      <h5>CRUD APP REACT X PHP</h5>
+      <nav>
+        <ul>
+          <li>
+            <Link to='/'>List of users</Link>
+          </li>
+          <li>
+            <Link to='user/add'>Add user</Link>
+          </li>
+        </ul>
+      </nav>
+        <Routes>
+          <Route path="/" element={<ListUsers />} />
+          <Route path="/user/add" element={<AddUser />} />     
+          <Route path="/user/:id/edit" element={<EditUser />} />        
+        </Routes>
+      </BrowserRouter>
+
+
     </div>
   );
 }

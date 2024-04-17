@@ -1,0 +1,34 @@
+.ListUsers table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.ListUsers table th{
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+.ListUsers table td{
+    border: 1px solid #f2f2f2;
+    padding: 10px;
+}
+.ListUsers table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.ListUsers table tr:hover{
+    background-color: #ffc5c5a4;
+}
+.ListUsers table td:hover{
+    background-color: #ffc5c5;
+}
+
+.ListUsers table th, .ListUsers table td{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
